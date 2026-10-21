@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Game profile</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: aliceblue;
+                text-align: center;
+                padding: 30px;
+            }
+            h1 { color:navy}
+            button {
+                background: navy;
+                color: white;
+                padding: 10px 25px;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+            div {
+                border: 1px solid navy;
+                width: 280px;
+                margin: 6px auto;
+                padding: 8px 12px;
+                text-align: left;
+                border-radius: 6px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Kunwar's game profile</h1>
+        <button onclick="ShowProfile()">Show Kunwars profile</button>
+
+        <div>Name: <span id="name"></span></div>
+        <div>Score: <span id="score"></span></div>
+        <div>Top Score: <span id="top"></span></div>
+        <div>Rank: <span id="rank"></span></div>
+        <div>Greetings: <span id="greetings"></span></div>
+        <div>Stars: <span id="star"></span></div>
+        <div>Bonus Levels: <span id="bonus"></span></div>
+        <div>Team: <span id="team"></span></div>
+        <script>
+            function showprofile() {
+                // Variables
+                let name = "Kunwar"
+                let score = "71"
+                let top = "90"
+                let bonus = null
+                let team;
+                let Istopscore = myscore == highscore 
+                let rank;
+                if(myscore=100) {
+                    rank = "Diamond";
+                }
+                if(myscore>=90) {
+                    rank = "Gold";
+                }
+               else if(myscore>=50) {
+                    rank = "silver";
+                }
+               else if(myscore>=25) {
+                    rank = "Bronze";
+                }
+
+                let hour = new Date().gethour();
+                let greetings;
+                if (hour < 12) {
+                    greetings = "Good Morning";
+                }
+                let greetings;
+                if (hour < 17) {
+                    greetings = "Good Evening";
+
+                    let Stars
+            }
+
+        </script>
+    </body>
+</html>
